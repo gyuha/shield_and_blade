@@ -1,0 +1,20 @@
+{
+  "name": "shield-and-blade",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "방패와 검으로 싸우는 브라우저용 1대1 보스 결투 게임",
+  "scripts": {
+    "start": "node tools/serve.mjs",
+    "test": "node --test",
+    "check:smoke": "node tools/check-smoke.mjs",
+    "check:playthrough": "node tools/check-playthrough.mjs",
+    "check:original": "node tools/check-original.mjs"
+  },
+  "dependencies": {
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.65.1"
+  }
+}

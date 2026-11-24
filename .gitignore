@@ -1,0 +1,7 @@
+node_modules/
+.forge/*
+!.forge/adr/
+!.forge/retro/
+!.forge/CONTEXT.md
+!.forge/config.json
+!.forge/followups.md
