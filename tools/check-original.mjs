@@ -6,7 +6,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const SKIP = new Set(['node_modules', '.git', '.forge']);
+const SKIP = new Set(['node_modules', '.git', '.forge', 'docs']); // docs: README용 게임 화면 캡처(게임이 쓰는 에셋이 아니다)
 const NAME = new RegExp(['even', 'song'].join(''), 'i'); // 이 파일 자신이 걸리지 않게 나눠 적는다
 const ASSET = /\.(png|jpe?g|webp|gif|svg|ico|glb|gltf|fbx|obj|mp3|ogg|wav|m4a|ttf|otf|woff2?|ktx2|hdr|exr|bin)$/i;
 
